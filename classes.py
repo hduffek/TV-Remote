@@ -14,7 +14,7 @@ class Television:
         '''
         self.__channel: int = Television.MIN_CHANNEL
         self.__volume: int = Television.MIN_VOLUME
-        self.__status: bool = "False"
+        self.__status: str = "False"
 
     def power(self) -> None:
         '''
@@ -22,9 +22,9 @@ class Television:
         :return: True if TV is Off, False if TV is On
         '''
         if self.__status == "False":
-            self.__status: bool = "True"
+            self.__status: str = "True"
         else:
-            self.__status: bool = "False"
+            self.__status: str = "False"
 
     def channel_up(self) -> None:
         '''
@@ -75,4 +75,4 @@ class Television:
         Sting Method that reports TV Status after each Television class call
         :return: Statement on TV Status (On/Off), current Channel, and current Volume
         '''
-        return f'TV status: Is on = {self.__status}, Channel = {self.__channel}, Volume = {self.__volume}'
+        return f'TV Status: Is on = {self.__status}, Channel = {self.__channel}, Volume = {self.__volume}'
