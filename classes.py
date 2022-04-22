@@ -75,4 +75,4 @@ class Television:
         Sting Method that reports TV Status after each Television class call
         :return: Statement on TV Status (On/Off), current Channel, and current Volume
         '''
-        return f'TV status: Is on = {self.__status}, Channel = {self.__channel}, Volume = {self.__volume}'
+        return f'TV Status: Is on = {self.__status}, Channel = {self.__channel}, Volume = {self.__volume}'
